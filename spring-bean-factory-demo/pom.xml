@@ -16,4 +16,8 @@
 	</properties>
     
    <artifactId>my-common-module</artifactId>
+   
+   <dependencies>
+	  
+   </dependencies>
 </project>
