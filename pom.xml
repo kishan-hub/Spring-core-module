@@ -31,7 +31,7 @@
 
 	<modules>
 		<!-- Add your module names here -->
-		<module>my-common-module</module>
+		<module>spring-bean-factory-demo</module>
 		<module>my-inherited-module</module>
 	</modules>
 </project>
