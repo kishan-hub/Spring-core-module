@@ -62,5 +62,8 @@
 		<!-- Add your module names here -->
 		<module>spring-bean-factory-demo</module>
 		<module>my-inherited-module</module>
+                <module>stratgy-design-pattern-by-props</module>
+                <module>postgress-connector</module>
+                <module>Bean-alias</module>
 	</modules>
 </project>
