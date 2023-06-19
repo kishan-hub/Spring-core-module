@@ -66,5 +66,6 @@
                 <module>postgress-connector</module>
                 <module>Bean-alias</module>
                 <module>Nested-bean</module>
+                <module>Collection-merge</module>
 	</modules>
 </project>
