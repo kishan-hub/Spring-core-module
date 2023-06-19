@@ -65,5 +65,6 @@
                 <module>stratgy-design-pattern-by-props</module>
                 <module>postgress-connector</module>
                 <module>Bean-alias</module>
+                <module>Nested-bean</module>
 	</modules>
 </project>
