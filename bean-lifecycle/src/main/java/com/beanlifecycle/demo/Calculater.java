@@ -1,5 +1,8 @@
 package com.beanlifecycle.demo;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
@@ -31,11 +34,15 @@ public class Calculater implements BeanFactoryAware {
     	endTime= System.currentTimeMillis();
     	
     }
+    
+    @PostConstruct
     public void init() {
     	System.out.println("init() Method Called...");
     	this.sum=this.num1+this.num2;
     	System.out.println("Sum of Num1 and Num2 is: "+sum);
     }
+    
+    @PreDestroy
     public void shutdown() {
     	System.out.println("Shutdown() called ...");
     	//To calculate the time interval between costructor and setter method
