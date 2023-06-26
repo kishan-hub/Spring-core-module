@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+                           
+   <bean id="calculater" class="com.beanlifecycle.demo.Calculater" init-method="init" destroy-method="shutdown">
+     <constructor-arg value="12"/>
+     <property name="num2" value="30"/>
+   </bean>
+   
+    <bean id="shutdownhookup" class="com.beanlifecycle.demo.ShutDownHookUp">
+    </bean>
+    
+</beans>
