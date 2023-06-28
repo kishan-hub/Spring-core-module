@@ -1,71 +1,181 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.example</groupId>
-	<artifactId>my-parent-project</artifactId>
-	<version>1.0.0</version>
-	<packaging>pom</packaging>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
-		<spring.version>5.3.9</spring.version>
-	</properties>
-
-	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
-		<dependency>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    	
+  
+  <modelVersion>4.0.0</modelVersion>
+    	
+  
+  <groupId>com.example</groupId>
+    	
+  
+  <artifactId>my-parent-project</artifactId>
+    	
+  
+  <version>1.0.0</version>
+    	
+  
+  <packaging>pom</packaging>
+    	
+  
+  <properties>
+        		
+    
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        		
+    
+    <maven.compiler.source>11</maven.compiler.source>
+        		
+    
+    <maven.compiler.target>11</maven.compiler.target>
+        		
+    
+    <spring.version>5.3.9</spring.version>
+        	
+  
+  </properties>
+    	
+  
+  <dependencies>
+        		
+    
+    <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+        		
+    
+    <dependency>
+                  
+      
       <groupId>org.springframework</groupId>
+                  
+      
       <artifactId>spring-core</artifactId>
+                  
+      
       <version>${spring.version}</version>
+                
+    
     </dependency>
+            
+    
     
     <!-- Spring Beans -->
+            
+    
     <dependency>
+                  
+      
       <groupId>org.springframework</groupId>
+                  
+      
       <artifactId>spring-beans</artifactId>
+                  
+      
       <version>${spring.version}</version>
+                
+    
     </dependency>
+            
+    
     
     <!-- Spring Context -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
+            
     
+    <dependency>
+                  
+      
+      <groupId>org.springframework</groupId>
+                  
+      
+      <artifactId>spring-context</artifactId>
+                  
+      
+      <version>${spring.version}</version>
+                
+    
+    </dependency>
+            
  
     
+    
+    
     <!-- Spring Expression Language -->
- <!--   <dependency>
+         
+    
+    <!--   <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-expression</artifactId>
       <version>${spring.version}</version>
     </dependency>-->
+            
+    
     
     <!-- Spring Context Support -->
-   <!-- <dependency>
+           
+    
+    <!-- <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context-support</artifactId>
       <version>${spring.version}</version>
     </dependency>-->
-    
+            
    
   
 
-	</dependencies>
+	
+  
+  </dependencies>
+    	
+  
+  <modules>
+        		
+    
+    <!-- Add your module names here -->
+        		
+    
+    <module>spring-bean-factory-demo</module>
+        		
+    
+    <module>my-inherited-module</module>
+                        
+    
+    <module>stratgy-design-pattern-by-props</module>
+                        
+    
+    <module>postgress-connector</module>
+                        
+    
+    <module>Bean-alias</module>
+                        
+    
+    <module>Nested-bean</module>
+                        
+    
+    <module>Collection-merge</module>
+                        
+    
+    <module>IDREF</module>
+        	  
+    
+    <module>web-core</module>
+        
+    <module>ThreadDemo</module>
+        
+    <module>Thread-Demo</module>
+        
+    <module>ClassLoaderDemo</module>
+        
+    <module>CloassLoaderDemo</module>
+        
+    <module>bean-scope</module>
+        
+    <module>static-factory-instantiate</module>
+        
+    <module>static-factory-demo</module>
+        
+    <module>factory-bean</module>
 
-	<modules>
-		<!-- Add your module names here -->
-		<module>spring-bean-factory-demo</module>
-		<module>my-inherited-module</module>
-                <module>stratgy-design-pattern-by-props</module>
-                <module>postgress-connector</module>
-                <module>Bean-alias</module>
-                <module>Nested-bean</module>
-                <module>Collection-merge</module>
-	</modules>
+    <module>bean-lifecycle</module>
+    <module>PropertyEditorDemo</module>
+  </modules>
+    
+
 </project>
